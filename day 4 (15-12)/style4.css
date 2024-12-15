@@ -1,0 +1,17 @@
+.orange-text {
+            color: orange;
+        }
+
+.blue-background {
+            background-image: url('img.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center;
+            border: 1px solid gray;
+            padding: 15px;
+            color: rgb(11, 22, 29); 
+        }
+
+    .inline-text {
+            font-weight: bold;
+        }
