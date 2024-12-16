@@ -1,0 +1,40 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8e8c0; 
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh; 
+    justify-content: space-between; 
+    align-items: stretch; 
+    border: 10px solid #d49d0b;
+}
+
+.box {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem; 
+    color: white; 
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+}
+
+.green { background-color: green; }
+.yellow { background-color: yellow; color: black; }
+.purple { background-color: purple; }
+.grey { background-color: grey; }
+.blue { background-color: blue; }
+.orange { background-color: orange; }
+.pink { background-color: pink; color: white; }
+.red { background-color: red; }
+.brown { background-color: brown; }

@@ -1,0 +1,20 @@
+.First {
+    background-color: orange;
+    float: left;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+  }
+   .Second {
+    background-color: blue;
+    float: right;
+    width:50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }

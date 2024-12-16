@@ -1,0 +1,42 @@
+1- can we create a form in side a form?
+	Nested forms are not supported and are not part of the w3c standard ( as many of you have stated ).
+	However HTML5 adds support for inputs that don't have to be descendants of any form, but can be submitted in several forms - by using the "form" attribute.
+	 This doesn't exactly allow nested forms, but by using this method, you can simulate nested forms. (ans from stack overflow post)
+	ex:
+	<form id="saveForm" action="/post/dispatch/save" method="post"></form>
+	<form id="deleteForm" action="/post/dispatch/delete" method="post"></form>
+
+	<div id="toolbar">
+    		<input type="text" name="foo" form="saveForm" />
+    		<input type="hidden" value="some_id" form="deleteForm" />
+    		<input type="text" name="foo2" id="foo2" form="saveForm" value="success" />
+        </div>
+
+	The value of the "form" attribute must be id of the form, or in case of multiple forms, separate form id's with space.
+
+2- can it possible to have multiple submit buttons ?
+	Using multiple submit buttons in an HTML form allows different actions based on the button clicked. Each submit button can trigger a unique server-side or JavaScript process while 	sharing the same form fields, enabling various functionalities within a single form structure. (Ans from geeks for geeks)
+
+	ex:
+	<form action="/DEFAULT_URL" method="post">
+    		<!-- Input fields here -->
+
+   		 <!-- This button will post to the /DEFAULT_URL of the form-->
+    		 <button type="submit">BUTTON 1</button>
+
+    		 <!-- This button will post to the custom URL of the formaction attribute-->
+    		 <button type="submit" formaction="/URL2">BUTTON 2</button>
+	</form>
+
+3- how we can submit the form if we don't have input-submit?
+	There are several ways to submit a form using JavaScript. Even more, we can also submit a form on some event on the webpage.
+	**Submit a Form Using JavaScript.
+		The most simple way to submit a form without the submit button is to trigger the submit event of a form using JavaScript.
+		ex:
+		<script>
+    		function submit_form(){
+       			 var form = document.getElementById("my_form");
+        		form.submit();
+        		alert("Your Message Sent");
+    		}
+    		</script>

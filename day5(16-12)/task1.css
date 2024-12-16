@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    width: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Prevents overflow of content */
+}
+
+.header {
+    padding: 15px;
+    background-color: #f0f0f0; /* Light background for header */
+}
+
+.content {
+    padding: 15px;
+    flex: 1; 
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: rgb(180, 173, 173);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
